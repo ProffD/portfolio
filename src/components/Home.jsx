@@ -31,7 +31,7 @@ const Home = () => {
           <p className="text-gray-500 py-4 pr-2 max-w-md">
             I have over 4 years of experience building and designing software.
             Currently, I love to work on web application using technologies like
-            Angular, React, Vue, Tailwind, Bootstrap, C# and GraphQL.
+            Angular, React, Vue, Tailwind, Bootstrap and C# for web API's.
           </p>
 
           <div>
