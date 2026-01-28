@@ -40,7 +40,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: '/Tshenolo Matome CV 202401.pdf',
+      href: '/Tshenolo-Matome-CV-202501.pdf',
       style: "rounded-br-md",
       download: true,
     },

@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .active-nav-link {
+    @apply text-white border-cyan-500;
+  }
+  
+  .active-nav-link-mobile {
+    @apply text-white border-cyan-500;
+  }
+}

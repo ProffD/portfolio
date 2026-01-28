@@ -16,6 +16,7 @@ const Contact = () => {
 
     const [loading, setLoading] = useState(false);
     const [contactInfo, setContactInfo] = useState(false);
+    const form = useRef();
 
     const { register, handleSubmit, reset, formState: {errors}} = useForm({
         resolver: yupResolver(validationSchema),
@@ -24,14 +25,12 @@ const Contact = () => {
             from_email: '',
             message: ''
         }
-    })
-
-    const form = useRef();
+    });
 
     const sendEmail = () => {
         setLoading(true);
         emailjs.sendForm('service_w9n6xmg', 'template_dq8mzfu', form.current, 'KIjqwusqrxOB6STWI')
-            .then((result) => {
+            .then(() => {
                 toast.success('An email notification has been successfully sent!', {
                     position: 'top-right',
                     autoClose: 3000, // in milliseconds
@@ -41,7 +40,7 @@ const Contact = () => {
                 });
                 setLoading(false);
                 reset();
-            }, (error) => {
+            }, () => {
                 toast.error('Could not send an email notification at the moment, please try again later.', {
                     position: 'top-right',
                     autoClose: 3000, // in milliseconds
@@ -53,53 +52,53 @@ const Contact = () => {
     };
 
   return (
-    <div name="contact" className="h-screen w-full grid place-items-center  bg-gradient-to-b from-gray-800 to-black text-white">
+    <div name="contact" className="min-h-screen w-full grid place-items-center bg-gradient-to-b from-gray-800 to-black text-white pt-20 py-16">
         <div className="bg-white rounded-md shadow-md flex flex-row">
             <div className="bg-gray-500 p-8 md:hover:scale-y-110 rounded-md transition h-96 w-96 hidden md:inline-block" id="contact_info">
-            <div className="flex justify-between">
-                <h2 className="text-white text-xl">Contact Information</h2>
-                <h2 className="text-white text-xs flex flex-row md:hidden cursor-pointer" id="switch_to_contact_us" onClick={() => setContactInfo(!contactInfo)}>Contact Us
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                    </svg>
-                </h2>
-            </div>
-            <div className="mt-6 flex flex-row">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-slate-200 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                    </svg>
+                <div className="flex justify-between">
+                    <h2 className="text-white text-xl">Contact Information</h2>
+                    <h2 className="text-white text-xs flex flex-row md:hidden cursor-pointer" id="switch_to_contact_us" onClick={() => setContactInfo(!contactInfo)}>Contact Us
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                        </svg>
+                    </h2>
                 </div>
-                <div>
-                    <h2 className="text-slate-200 text-xs">Name :</h2>
-                    <p className="text-white text-xs">Tshenolo Matome</p>
+                <div className="mt-6 flex flex-row">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-slate-200 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 className="text-slate-200 text-xs">Name :</h2>
+                        <p className="text-white text-xs">Tshenolo Matome</p>
+                    </div>
                 </div>
-            </div>
 
-            <div className="mt-4 flex flex-row">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-slate-200 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clipRule="evenodd" />
-                    </svg>
+                <div className="mt-4 flex flex-row">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-slate-200 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clipRule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 className="text-slate-200 text-xs">Email :</h2>
+                        <p className="text-white text-xs">tbmatome@gmail.com</p>
+                    </div>
                 </div>
-                <div>
-                    <h2 className="text-slate-200 text-xs">Email :</h2>
-                    <p className="text-white text-xs">tbmatome@gmail.com</p>
-                </div>
-            </div>
 
-            <div className="mt-4 flex flex-row">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-slate-200 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                    </svg>
+                <div className="mt-4 flex flex-row">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-slate-200 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 className="text-slate-200 text-xs">Phone :</h2>
+                        <p className="text-white text-xs">072 5170 949 / 071 0741 854</p>
+                    </div>
                 </div>
-                <div>
-                    <h2 className="text-slate-200 text-xs">Phone :</h2>
-                    <p className="text-white text-xs">072 5170 949 / 071 0741 854</p>
-                </div>
-            </div>
-
+                
                 <div className="mt-5 flex flex-row">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-slate-200 mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -111,7 +110,6 @@ const Contact = () => {
                         <p className="text-white text-xs">214 Block Y Shoshanguve Pretoria 0152</p>
                     </div>
                 </div>
-
             </div>
             <div className="px-6 py-8 h-96 w-96 max-w-3xl:hidden " id="contact_us">
                 <div className="flex justify-between">

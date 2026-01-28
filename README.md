@@ -1,53 +1,111 @@
-# Getting Started with Create React App
+# Tshenolo Matome - Professional Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website showcasing my experience as a Senior Software Engineer at Sage Software.
 
-## Available Scripts
+## 🚀 About Me
 
-In the project directory, you can run:
+Senior Software Engineer with 5+ years of experience in full-stack development, specializing in:
+- Enterprise-level web applications
+- Angular, React, and Vue.js frameworks
+- .NET Core and Azure cloud services
+- Leading development teams and mentoring junior developers
 
-### `npm start`
+## 🛠️ Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This portfolio is built with:
+- **React.js** - Frontend framework
+- **Tailwind CSS** - Styling and responsive design
+- **EmailJS** - Contact form integration
+- **React Icons** - Icon library
+- **React Scroll** - Smooth scrolling navigation
+- **React Hook Form & Yup** - Form validation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📋 Features
 
-### `npm test`
+- Responsive design for all devices
+- Animated typing effect on hero section
+- Interactive skills showcase
+- Project portfolio with live demos and code links
+- Contact form with email integration
+- Downloadable resume
+- Social media links (LinkedIn, GitHub)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository
+```bash
+git clone https://github.com/ProffD/portfolio.git
+cd portfolio
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies
+```bash
+npm install --legacy-peer-deps
+```
 
-### `npm run eject`
+3. Start the development server
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The application will open at [http://localhost:3000](http://localhost:3000)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Build for Production
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Deploy to GitHub Pages
 
-## Learn More
+```bash
+npm run deploy
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📂 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+├── components/
+│   ├── Home.jsx          # Hero section with animated titles
+│   ├── About.jsx         # About me section
+│   ├── Portfolio.jsx     # Projects showcase
+│   ├── Experience.jsx    # Technical skills
+│   ├── Contact.jsx       # Contact form
+│   ├── NavBar.jsx        # Navigation menu
+│   └── SocialLinks.jsx   # Social media links
+├── assets/              # Images and media files
+├── App.js              # Main application component
+└── index.js            # Application entry point
+```
 
-### Code Splitting
+## 👨‍💻 Professional Experience
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Senior Software Engineer** - Sage Software (Nov 2022 - Present)
+- Leading development of Sage Business Cloud Payroll Africa
+- Working with Angular, React, .NET Core, and Azure
+- Mentoring junior developers and conducting code reviews
+
+## 📫 Contact
+
+- **Email**: tbmatome@gmail.com
+- **LinkedIn**: [tshenolo-matome](https://www.linkedin.com/in/tshenolo-matome-9b47a8b9/)
+- **GitHub**: [ProffD](https://github.com/ProffD)
+- **Portfolio**: [https://proffd.github.io/portfolio](https://proffd.github.io/portfolio)
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+Built with ❤️ by Tshenolo Matome
 
 ### Analyzing the Bundle Size
 
