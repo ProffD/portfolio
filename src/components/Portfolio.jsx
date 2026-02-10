@@ -20,8 +20,8 @@ const Portfolio = () => {
       src: MortgageApp,
       title: "Mortgage calculator",
       description: "A modern Angular application built using Angular Signals for state management, focused on performance, clarity, and reactive UI updates",
-      demo: "https://ProffD.github.io/mortgage",
-      code: "https://github.com/ProffD"
+      demo: "https://ProffD.github.io/mortgage-calc",
+      code: "https://github.com/ProffD//mortgage-calc"
     },
     {
       id: 3,

@@ -2,6 +2,8 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import cv from '../assets/Tshenolo-Matome-CV-202501.pdf';
+
 
 const SocialLinks = () => {
   const links = [
@@ -40,7 +42,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: '/Tshenolo-Matome-CV-202501.pdf',
+      href: cv,
       style: "rounded-br-md",
       download: true,
     },
