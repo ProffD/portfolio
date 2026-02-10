@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.07ea7133.css",
-    "main.js": "/portfolio/static/js/main.09bcdaaf.js",
+    "main.js": "/portfolio/static/js/main.1e06d14a.js",
     "static/media/mortcalc.png": "/portfolio/static/media/mortcalc.29a2b458929065b80c18.png",
     "static/media/restapi.png": "/portfolio/static/media/restapi.1f92756e4edf515fa4c4.png",
+    "static/media/Tshenolo-Matome-CV-202501.pdf": "/portfolio/static/media/Tshenolo-Matome-CV-202501.8fad111eded39345ead5.pdf",
     "static/media/csharp.png": "/portfolio/static/media/csharp.94946653c716ee3fbf46.png",
     "static/media/graphql.png": "/portfolio/static/media/graphql.fc6b9451733c620ceb86.png",
     "static/media/WeatherApp.PNG": "/portfolio/static/media/WeatherApp.327676b677aeda6aa1a2.PNG",
@@ -15,10 +16,10 @@
     "static/media/tshenolo_profile_pic.jpeg": "/portfolio/static/media/tshenolo_profile_pic.b8be7922cb84d82b4df3.jpeg",
     "index.html": "/portfolio/index.html",
     "main.07ea7133.css.map": "/portfolio/static/css/main.07ea7133.css.map",
-    "main.09bcdaaf.js.map": "/portfolio/static/js/main.09bcdaaf.js.map"
+    "main.1e06d14a.js.map": "/portfolio/static/js/main.1e06d14a.js.map"
   },
   "entrypoints": [
     "static/css/main.07ea7133.css",
-    "static/js/main.09bcdaaf.js"
+    "static/js/main.1e06d14a.js"
   ]
 }
